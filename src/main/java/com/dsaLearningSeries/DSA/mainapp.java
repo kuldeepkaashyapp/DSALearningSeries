@@ -7,15 +7,11 @@ public class mainapp {
 
     public static void main(String[] args) {
       ArrayDemo demo = new ArrayDemo();
-      int arr[]={2,5,1,3,4,7};
-     int [] newArr= demo.shuffle(arr,3);
+      int arr[]={4,9,23,4};
+     //int [] newArr= demo.shuffle(arr,3);
 
 
-   for(int a:newArr){
-
-       System.out.println(a);
-   }
-
+        System.out.println(demo.asteroidsDestroyed(5,arr));
     }
 
 
