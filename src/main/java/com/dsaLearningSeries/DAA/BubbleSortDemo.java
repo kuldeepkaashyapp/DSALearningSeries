@@ -2,7 +2,7 @@ package com.dsaLearningSeries.DAA;
 
 public class BubbleSortDemo {
 
-    public static void bubbleSort(int arr[]) {
+    public static void bubbleSort(int[] arr) {
 
         int n = arr.length;
 
@@ -43,7 +43,7 @@ public class BubbleSortDemo {
     }
 
     // Method to print array
-    public static void printArray(int arr[]) {
+    public static void printArray(int[] arr) {
 
         for (int num : arr) {
             System.out.print(num + " ");
@@ -52,9 +52,9 @@ public class BubbleSortDemo {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
-        int arr[] = {5, 1, 4, 2, 8};
+        int[] arr = {5, 1, 4, 2, 8};
 
         bubbleSort(arr);
     }

@@ -7,7 +7,7 @@ public class Searching {
     *
     * */
 
-    void linearSearch(int arr[],int key){
+    void linearSearch(int[] arr, int key){
 
         for (int i = 0; i < arr.length; i++) {
            System.out.println((arr[i]==key) ? i :"Notfound");
@@ -16,7 +16,7 @@ public class Searching {
 
     }
 
-    void binarySearch(int arr[],int key){
+    void binarySearch(int[] arr, int key){
 
         int low=0;
         int high=arr.length -1;
