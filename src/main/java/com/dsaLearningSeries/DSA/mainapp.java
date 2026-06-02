@@ -1,6 +1,6 @@
 package com.dsaLearningSeries.DSA;
 
-import java.util.ArrayList;
+import com.dsaLearningSeries.DSA.Leetcode.ArrayDemo;
 
 public class mainapp {
 

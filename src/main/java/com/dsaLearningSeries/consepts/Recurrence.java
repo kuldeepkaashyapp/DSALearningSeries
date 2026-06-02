@@ -1,4 +1,4 @@
-package com.dsaLearningSeries.DAA;
+package com.dsaLearningSeries.consepts;
 
 import lombok.Builder;
 import lombok.Data;

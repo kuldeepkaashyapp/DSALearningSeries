@@ -1,6 +1,5 @@
-package com.dsaLearningSeries.DSA;
+package com.dsaLearningSeries.DSA.Leetcode;
 
-import java.awt.geom.QuadCurve2D;
 import java.util.*;
 
 public class ArrayDemo {
@@ -389,6 +388,7 @@ n == nums.length
         }
 return total;
     }
+
 
 
 }
