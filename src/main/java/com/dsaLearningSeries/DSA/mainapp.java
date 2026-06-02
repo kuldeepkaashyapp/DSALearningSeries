@@ -1,12 +1,12 @@
 package com.dsaLearningSeries.DSA;
 
-import com.dsaLearningSeries.DSA.Leetcode.ArrayDemo;
+import com.dsaLearningSeries.DSA.Leetcode.ArrayProblems;
 
 public class mainapp {
 
 
    public static void main(String[] args) {
-      ArrayDemo demo = new ArrayDemo();
+      ArrayProblems demo = new ArrayProblems();
       int[] arr ={4,9,23,4};
      //int [] newArr= demo.shuffle(arr,3);
 
