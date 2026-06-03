@@ -454,40 +454,58 @@ n == nums.length
     Plan A provides the earliest finish time of 14.
 
 */
-
-
-
-    static final  int infinity = Integer.MAX_VALUE;
-
-
-
+// Defining  bing Value as the intial intialiser
+static final int INFINITY = Integer.MAX_VALUE;
     public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration) {
+
+        // Defini all the variable
+
         int landLength = landStartTime.length;
         int waterLength = waterStartTime.length;
 
-        int landFinishTime = infinity;
-        int waterFinishTime = infinity;
-        int land_waterTime = infinity;
-        int water_landTime = infinity;
+        int landFinishTime = INFINITY;
+        int waterFinishTime = INFINITY;
+        int land_waterTime = INFINITY;
+        int water_landTime = INFINITY;
 
-// checking least time for land
-        for (int i = 0; i <landLength; i++) {
-            landFinishTime = Math.min(landFinishTime, waterStartTime[i] + waterDuration[i]);
+        // now checking least time for the landRide
+        //stating from waterRide
+        for(int i =0; i < landLength; i++){
+            landFinishTime = Math.min(landFinishTime, landStartTime[i] + landDuration[i]);
 
         }
 
-// checking  land and water ride comapration
-        for (int i = 0; i <waterLength; i++) {
-            waterFinishTime=Math.min(waterFinishTime, waterStartTime[i] + waterDuration[i]);
-            land_waterTime= Math.min(land_waterTime,Math.max(waterStartTime[i],landFinishTime)+waterDuration[i] );
+
+        // checnking  Land Ride VS water Rides
+
+        for(int i = 0 ; i<waterLength ; i++){
+
+            waterFinishTime=Math.min(waterFinishTime,waterStartTime[i]+waterDuration[i]);
+
+
+
+        }
+// first we take the landRide then water water ride
+
+        for(int i=0 ; i< waterLength; i++){
+            land_waterTime=Math.min(land_waterTime,
+                    Math.max(waterStartTime[i],landFinishTime)
+                            +waterDuration[i]);
         }
 
-        // comaring water and land least duration
-        for (int i = 0; i < landLength; i++) {
-            water_landTime=Math.min(water_landTime,Math.max(landStartTime[i],landDuration[i])+landDuration[i]);
-        }
+        // checking water rides vs land rides;
 
+        // till now we have time of landVSWater, waterFinish time  and LandFinish time
+
+
+        for(int i=0 ; i < landLength ; i++){
+            water_landTime=Math.min(water_landTime,Math.max(landStartTime[i],waterFinishTime)+landDuration[i]);
+
+        }
+        // now return least total time for  duration of time to complete
         return Math.min(water_landTime,land_waterTime);
+
+
     }
 
 }
