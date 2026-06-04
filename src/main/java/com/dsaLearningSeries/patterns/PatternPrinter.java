@@ -14,6 +14,17 @@ public class PatternPrinter {
 
         // pattern.printSquare(5);
 
-        //out put for the
+        //out put for dynamicPatter
+
+      //  pattern.printDynamicIncrement(5);
+
+      //  pattern.alphbentPattern(4);
+
+        //repepated Numrbers
+
+        //pattern.printRepeatedNumberPattern(4);
+
+        // repepated Alphabate
+        pattern.printRepeatedAlphabetPattern(5);
     }
 }
