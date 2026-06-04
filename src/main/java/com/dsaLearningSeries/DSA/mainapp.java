@@ -12,13 +12,18 @@ public class mainapp {
        String[] strs ={"1","01","001","0001"};
        //int [] newArr= demo.shuffle(arr,3);
 
-        int maxLength= demo.maximumValue(strs);
+        //int maxLength= demo.maximumValue(strs);
 
 
-       System.out.println("Max Length "+maxLength);
+       //System.out.println("Max Length "+maxLength);
        //System.out.println(demo.asteroidsDestroyed(19%3));
       //  System.out.println(demo.minimumCost(arr));
 
+
+
+       // quesition 3751 check
+
+       System.out.println(demo.totalWaviness(120,130));
 
     }
 
