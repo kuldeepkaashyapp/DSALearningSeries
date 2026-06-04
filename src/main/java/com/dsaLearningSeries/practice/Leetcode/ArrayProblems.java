@@ -1,4 +1,4 @@
-package com.dsaLearningSeries.DSA.Leetcode;
+package com.dsaLearningSeries.practice.Leetcode;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.dsaLearningSeries.consepts;
+package com.dsaLearningSeries.consepts.sorting;
 
 public class BubbleSortDemo {
 

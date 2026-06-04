@@ -1,4 +1,4 @@
-package com.dsaLearningSeries.consepts;
+package com.dsaLearningSeries.consepts.searching;
 
 public class Searching {
     /*

@@ -1,6 +1,6 @@
-package com.dsaLearningSeries.DSA;
+package com.dsaLearningSeries.practice;
 
-import com.dsaLearningSeries.DSA.Leetcode.ArrayProblems;
+import com.dsaLearningSeries.practice.Leetcode.ArrayProblems;
 
 public class mainapp {
 
