@@ -122,6 +122,69 @@ public class Patterns {
     }
 
 
+  /*  print the pattern
+
+    output:
+    ------
+
+            *
+            **
+            ***
+            ****
+            *****
+        */
+
+
+    public void printRightTrianglePattern(int n){
+        for(int i=1;i<=n;i++){
+            for(int k=1;k<=i;k++){
+
+                    System.out.print("*");
+
+            }
+            System.out.println();
+        }
+    }
+
+  /*
+    output
+    ------
+
+    A
+    A B
+    A B C
+    A B C D
+
+*/
+
+
+    public   void printAlphabetTriangle(int n){
+        for(int i=1;i<=n;i++){
+            for(int k=1;k<=i;k++){
+                System.out.print((char) (k+64)+" ");
+            }
+            System.out.println();
+        }
+    }
+
+
+ /*   Write code to output :
+    output
+            * * * *
+            * * *
+            * *
+            *
+*/
+
+    public void printStarFillipedPattern(int n ){
+        for(int i=1;i<=n;i++){
+            for(int k=1;k<=n-i+1;k++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
 
 
 

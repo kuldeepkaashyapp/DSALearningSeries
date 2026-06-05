@@ -25,6 +25,11 @@ public class PatternPrinter {
         //pattern.printRepeatedNumberPattern(4);
 
         // repepated Alphabate
-        pattern.printRepeatedAlphabetPattern(5);
+       // pattern.printRepeatedAlphabetPattern(5);
+
+      //  pattern.printRightTrianglePattern(5);
+       // pattern.printAlphabetTriangle(40000000);
+
+        pattern.printStarFillipedPattern(6);
     }
 }
