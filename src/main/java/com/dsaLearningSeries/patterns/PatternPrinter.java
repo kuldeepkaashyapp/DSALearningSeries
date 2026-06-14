@@ -30,6 +30,8 @@ public class PatternPrinter {
       //  pattern.printRightTrianglePattern(5);
        // pattern.printAlphabetTriangle(40000000);
 
-        pattern.printStarFillipedPattern(6);
+        //    pattern.printStarFillipedPattern(6);
+
+        pattern.printNumberGrid(5);
     }
 }
