@@ -75,4 +75,27 @@ public class ArthmeaticsLogic {
     }
 
 
+    public static void checkArmstrongNumber(int n ) {
+        int sum = 0;
+       String str=Integer.toString(n);
+
+       int len = str.length();
+
+       for(int i=0;i<len;i++){
+           int digit= str.charAt(i)-'0';
+
+           sum+=(int)Math.pow(digit,len);
+
+
+
+       }
+
+        if(sum==n){
+            System.out.println("Armstrong Number"+n);
+
+        }
+    }
+
+
+
 }
