@@ -18,23 +18,26 @@ public class SecondLargestElement {
             if (letMax <= nums[i]) {
 
                 max = nums[i];
-            }
 
-            if (letMax >= max) {
-                letMax = nums[index];
-                index++;
+
             }
 
 
-            if (max > nums[i] && letMax <= nums[i]) {
+            // finding secomd max element batter approch :
 
-                return nums[i];
+            if (secondMax< nums[i] && nums[i] != max ) {
+
+                secondMax = nums[i];
+
+
+
             }
-
 
         }
 
- return -1;
+
+
+ return secondMax;
     }
 
 
